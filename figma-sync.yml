@@ -1,0 +1,57 @@
+.github/workflows/figma-sync.yml
+name: 🎨 Figma Code Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * *'
+
+jobs:
+  sync-figma:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: 📁 Create export directory
+        run: mkdir -p figma-exports
+      
+      - name: 🎨 Fetch Figma design data
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+        run: |
+          echo "🔄 Fetching Figma file..."
+          curl -X GET "https://api.figma.com/v1/files/${FIGMA_FILE_ID}" \
+            -H "X-FIGMA-TOKEN: ${FIGMA_TOKEN}" \
+            -o figma-exports/figma-design.json
+          echo "✅ Export complete"
+      
+      - name: 📝 Create sync summary
+        run: |
+          cat > figma-exports/SYNC_INFO.md << 'EOF'
+          # Figma Sync - $(date)
+          
+          ✅ Sync completed successfully!
+          
+          Next: Download code from Figma, extract, and copy to this folder.
+          EOF
+      
+      - name: ⚙️ Configure Git
+        run: |
+          git config --local user.email "figma-sync@github.com"
+          git config --local user.name "🤖 Figma Sync Bot"
+      
+      - name: 💾 Commit and Push
+        run: |
+          git add figma-exports/ || true
+          git commit -m "🎨 Auto-sync: Figma export $(date)" || true
+          git push || true
