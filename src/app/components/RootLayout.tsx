@@ -51,7 +51,7 @@ export function RootLayout() {
             <Link to="/" className="flex items-center gap-3">
               <img src={logoImg} alt="Sajha Safar Logo" className="h-12 w-auto object-contain drop-shadow-sm" />
               <div className="hidden sm:block">
-                <h1 className="text-2xl font-bold text-blue-800 tracking-tight">Sajha Safar</h1>
+                <h1 className="text-2xl font-bold text-blue-800 tracking-tight">Sajhaa Safar</h1>
                 <p className="text-[10px] uppercase tracking-widest text-gray-500 font-semibold mt-0.5">Your Journey, Our Passion</p>
               </div>
             </Link>

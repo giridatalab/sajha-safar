@@ -119,7 +119,7 @@ export function Home() {
       {/* Introduction Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Welcome to Sajha Safar</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Welcome to Sajhaa Safar</h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
             At Sajha Safar, we believe every journey tells a story. Whether you're seeking adventure in the mountains,
             relaxation on pristine beaches, or cultural immersion in historic cities, we create personalized travel
