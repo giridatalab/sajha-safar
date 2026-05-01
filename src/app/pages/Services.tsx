@@ -117,7 +117,7 @@ export function Services() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Everything You Need for a Perfect Trip</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            At Sajha Safar, we offer comprehensive travel services to make your journey seamless and enjoyable. From
+            At Sajhaa Safar, we offer comprehensive travel services to make your journey seamless and enjoyable. From
             planning to execution, we handle every detail so you can focus on creating memories.
           </p>
         </div>
@@ -155,7 +155,7 @@ export function Services() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Book With Sajha Safar?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Book With Sajhaa Safar?</h2>
             <p className="text-lg text-gray-600">Our commitment to excellence sets us apart</p>
           </div>
 

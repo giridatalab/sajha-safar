@@ -15,7 +15,7 @@ export function About() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-600/60"></div>
         </div>
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">About Sajha Safar</h1>
+          <h1 className="text-5xl font-bold mb-4">About Sajhaa Safar</h1>
           <p className="text-xl">Your Journey, Our Passion</p>
         </div>
       </section>
@@ -26,7 +26,7 @@ export function About() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Sajha Safar is a premier travel agency based in Ranchi, Jharkhand, dedicated to creating extraordinary
+              Sajhaa Safar is a premier travel agency based in Ranchi, Jharkhand, dedicated to creating extraordinary
               travel experiences for our valued customers. Founded with a vision to make travel accessible, affordable,
               and memorable, we specialize in both domestic and international tour packages tailored to meet the unique
               needs of every traveler.
@@ -73,7 +73,7 @@ export function About() {
               <p className="text-xl text-blue-600 font-semibold">Founder </p>
             </div>
             <p className="text-lg text-gray-700 leading-relaxed text-center">
-              Under the visionary leadership of Mrs. Bandana Jha, Sajha Safar has grown to become a trusted name in the
+              Under the visionary leadership of Mrs. Bandana Jha, Sajhaa Safar has grown to become a trusted name in the
               travel industry. With her passion for travel and commitment to customer satisfaction, she has built a team
               dedicated to making every journey special. Her hands-on approach and attention to detail ensure that each
               customer receives personalized care and the highest quality service.
@@ -95,7 +95,7 @@ export function About() {
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-2">Sajha Safar Head Office</h3>
+                <h3 className="text-2xl font-bold mb-2">Sajhaa Safar Head Office</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Gauri Shankar Nagar, Doranda<br />
                   Ranchi, Jharkhand - 834002<br />
@@ -115,7 +115,7 @@ export function About() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Sajha Safar?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Sajhaa Safar?</h2>
             <p className="text-lg text-gray-600">What sets us apart from the rest</p>
           </div>
 

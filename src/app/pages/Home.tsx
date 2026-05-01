@@ -33,7 +33,7 @@ export function Home() {
     {
       name: "Rajesh Kumar",
       location: "Ranchi",
-      text: "Amazing Goa trip! Sajha Safar handled everything perfectly. Mrs. Bandana was very supportive throughout.",
+      text: "Amazing Goa trip! Sajhaa Safar handled everything perfectly. Mrs. Bandana was very supportive throughout.",
       rating: 5,
     },
     {
@@ -94,7 +94,7 @@ export function Home() {
       <section className="bg-blue-900 py-10 px-4">
         <div className="max-w-4xl mx-auto text-center text-white">
           <p className="text-xl md:text-2xl mb-8 font-medium">
-            Explore India and the World with Sajha Safar - Your Trusted Travel Partner
+            Explore India and the World with Sajhaa Safar - Your Trusted Travel Partner
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -121,7 +121,7 @@ export function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Welcome to Sajhaa Safar</h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
-            At Sajha Safar, we believe every journey tells a story. Whether you're seeking adventure in the mountains,
+            At Sajhaa Safar, we believe every journey tells a story. Whether you're seeking adventure in the mountains,
             relaxation on pristine beaches, or cultural immersion in historic cities, we create personalized travel
             experiences that exceed your expectations. With years of expertise and a passion for travel, we're here to
             make your dream vacation a reality.

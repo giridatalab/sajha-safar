@@ -1,11 +1,24 @@
 import { Outlet, Link, useLocation } from "react-router";
 import { Phone, Mail, MessageCircle, Menu, X } from "lucide-react";
-import { useState } from "react";
-import logoImg from "../../imports/27e087ae-c481-4202-a531-d321f67cd4e3-removebg-preview.png";
+import { useState, useEffect } from "react";
+import logoImg from "../../imports/a1c67fe2-35e8-40aa-aae0-744d1b5eeac5-Photoroom.png";
 
 export function RootLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    document.title = "Sajhaa Safar";
+    const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (link) {
+      link.href = logoImg;
+    } else {
+      const newLink = document.createElement("link");
+      newLink.rel = "icon";
+      newLink.href = logoImg;
+      document.head.appendChild(newLink);
+    }
+  }, []);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -27,7 +40,7 @@ export function RootLayout() {
               <Phone className="w-4 h-4" />
               <span>9473009712</span>
             </a>
-            <a href="mailto:sajhasafar@gmail.com" className="hidden sm:flex items-center gap-1 hover:text-blue-200 transition">
+            <a href="mailto:sajhaasafar@gmail.com" className="hidden sm:flex items-center gap-1 hover:text-blue-200 transition">
               <Mail className="w-4 h-4" />
               <span>sajhasafar@gmail.com</span>
             </a>
@@ -49,7 +62,7 @@ export function RootLayout() {
         <nav className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center gap-3">
-              <img src={logoImg} alt="Sajha Safar Logo" className="h-12 w-auto object-contain drop-shadow-sm" />
+              <img src={logoImg} alt="Sajhaa Safar Logo" className="h-12 w-auto object-contain drop-shadow-sm" />
               <div className="hidden sm:block">
                 <h1 className="text-2xl font-bold text-blue-800 tracking-tight">Sajhaa Safar</h1>
                 <p className="text-[10px] uppercase tracking-widest text-gray-500 font-semibold mt-0.5">Your Journey, Our Passion</p>
@@ -116,9 +129,9 @@ export function RootLayout() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="bg-white p-1 rounded-lg">
-                  <img src={logoImg} alt="Sajha Safar Logo" className="h-10 w-auto object-contain" />
+                  <img src={logoImg} alt="Sajhaa Safar Logo" className="h-10 w-auto object-contain" />
                 </div>
-                <h3 className="text-xl font-bold">Sajha Safar</h3>
+                <h3 className="text-xl font-bold">Sajhaa Safar</h3>
               </div>
               <p className="text-gray-400">
                 Your trusted travel partner for unforgettable journeys across India and beyond.
@@ -149,7 +162,7 @@ export function RootLayout() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2026 Sajha Safar. All rights reserved. | CEO: Mrs. Bandana Jha</p>
+            <p>&copy; 2026 Sajhaa Safar. All rights reserved. | CEO: Mrs. Bandana Jha</p>
           </div>
         </div>
       </footer>

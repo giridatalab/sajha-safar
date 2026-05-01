@@ -28,7 +28,7 @@ export function Contact() {
     e.preventDefault();
 
     const whatsappMessage = `
-*New Enquiry from Sajha Safar Website*
+*New Enquiry from Sajhaa Safar Website*
 
 Name: ${formData.name}
 Contact: ${formData.contact}
@@ -116,11 +116,9 @@ Message: ${formData.message}
               </div>
               <h3 className="text-xl font-bold mb-2">Email Us</h3>
               <a
-                href="mailto:sajhasafar@gmail.com"
+                href="mailto:sajhaasafar@gmail.com"
                 className="text-orange-600 hover:text-orange-700 text-lg font-semibold break-all"
-              >
-                sajhasafar@gmail.com
-              </a>
+              >sajhasafar@gmail.com</a>
               <p className="text-sm text-gray-600 mt-2">We'll respond within 24 hours</p>
             </div>
           </div>
@@ -339,7 +337,7 @@ Message: ${formData.message}
                     <h3 className="font-bold text-lg mb-1">Contact Details</h3>
                     <p className="text-gray-700">
                       Phone: <a href="tel:9473009712" className="text-blue-600 hover:underline">9473009712</a><br />
-                      Email: <a href="mailto:sajhasafar@gmail.com" className="text-blue-600 hover:underline">sajhasafar@gmail.com</a>
+                      Email: <a href="mailto:sajhaasafar@gmail.com" className="text-blue-600 hover:underline">sajhasafar@gmail.com</a>
                     </p>
                   </div>
                 </div>
